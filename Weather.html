@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+</head>
+<style>
+    .container{
+        width: 503px;
+        height: 303px;
+        background-color: rgb(18, 42, 59);
+        border-radius: 8px;
+        border-color: rgb(79, 108, 130);
+        border-style: solid;
+        border-width: 5px;
+        position: relative;
+        top: 200px;
+        left:200px;
+    }
+    .header{
+        height: 35px;
+        font-size: 8px;
+        text-align: center;
+        color: aliceblue;
+        padding-top: 3px;
+    }
+    .section1{
+        height:106px;
+        position: absolute;
+        top: 60px;
+        width: 503px;
+
+    }
+    #cloudy{
+        width: 107px;
+        height: 79px;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+
+    #cloudy2{
+        margin-top: 10px;
+        width: 70px;
+        height: 53px;
+        position: absolute;
+        top: 12px;
+        left: 15px;
+    }
+    #rainy2{
+        position: absolute;
+        width: 70px;
+        height: 53px;
+        top: 12px;
+        left: 15px;
+        margin-top: 5px;
+    }
+    #rainy3{
+        position: absolute;
+        width: 70px;
+        height: 53px;
+        top: 12px;
+        left: 15px;
+        margin-top: 5px;
+    }
+
+    #mostCloud{
+        position: absolute;
+        width: 70px;
+        height: 53px;
+        top: 12px;
+        left: 15px;
+        margin-top: 5px;
+    }
+    #mostCloud2{
+        position: absolute;
+        width: 70px;
+        height: 53px;
+        top: 12px;
+        left: 15px;
+        margin-top: 5px;
+    }
+
+    #temperature{
+        position: absolute;
+        left: 230px;
+        top: 0px;
+        color: beige;
+        font-size: xx-large;
+    }
+    #data{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 120px;
+        font-size: small;
+        color: beige;
+    }
+    /*180px away from its ancestor*/
+    .days{
+        position: absolute;
+        width: 100%;
+        top: 180px;
+        background-color: #122A3B;
+        color: aliceblue;
+
+    }
+    #tue{
+        float: left;
+        width: 20%;
+        height: 120px;
+
+        text-align: center;
+        color: aliceblue;
+        position: relative;
+    }
+    #wed{
+        float: left;
+        width: 20%;
+        height: 120px;
+
+        text-align: center;
+        position: relative;
+    }
+    #thu{
+        float: left;
+        width: 20%;
+        height: 120px;
+
+        text-align: center;
+        position: relative;
+    }
+    #fri{
+        float: left;
+        width: 20%;
+        height: 120px;
+
+        text-align: center;
+        position: relative;
+    }
+    #sat{
+        float: left;
+        width: 20%;
+        height: 120px;
+
+        text-align: center;
+        position:relative;
+    }
+    p1{
+        position: absolute;
+        top: 80px;
+        left: 40px;
+    }
+
+</style>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Richmond Hill, Ontario, Canada</h1>
+        </div>
+
+
+    <div class="section1">
+        <div id="s1left">
+            <img id="cloudy" src="src/cloudypic.png">
+        </div>
+        <div id="temperature">
+            <p>14°C</p>
+        </div>
+        <div id="data">
+            <p>
+                Wind: 7 kmph<br>Precip: 0 mm<br>Pressure: 1020 mb
+            </p>
+        </div>
+
+    </div>
+        <div class="days">
+            <div id="tue">
+                <span>TUE</span>
+                <img id="cloudy2" src="src/cloudypic.png">
+
+                <p1>8°C</p1>
+
+            </div>
+            <div id="wed">
+                <span>WED</span>
+                <img id="rainy2" src="src/rainy.png">
+
+                <p1>10°C</p1>
+
+            </div>
+            <div id="thu">
+                <span>THU</span>
+                <img id="mostCloud" src="src/mostCloud.png">
+
+                <p1>10°C</p1>
+
+            </div>
+            <div id="fri">
+                <span>FRI</span>
+                <img id="rainy3" src="src/rainy.png">
+
+                <p1>4°C</p1>
+
+            </div>
+            <div id="sat">
+                <span>FRI</span>
+                <img id="mostCloud2" src="src/mostCloud.png">
+
+                <p1>3°C</p1>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
